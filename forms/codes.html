@@ -1,0 +1,34 @@
+<html>
+
+<head>
+</head>
+
+<head>
+<body>
+
+<form action="/codes" method="POST">
+    Enter Code with number
+    <p id="codeId"></p>
+    <input type="text" name="code" />
+    <input type="submit" value="send">
+</form>
+</body>
+
+<script>
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            var temp = c.split('=');
+            if (temp[0] == ' code') {
+
+                return temp[1];
+            }
+        }
+        return "";
+    }
+    document.getElementById('codeId').innerHTML = getCookie('code') + ':';
+</script>
+</html>

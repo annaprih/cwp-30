@@ -1,0 +1,13 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "name": "cwp_30",
+    "user": "root",
+    "password": "root",
+    "dialect": "mysql",
+    "define": {
+      "timestamps": false,
+      "paranoid": false
+    }
+  }
+}
